@@ -13,7 +13,7 @@ export default function Homepage() {
   return (
     <div className="">
       {/* Hero Banner */}
-      <section className="mt-[72px] xl:mt-[108px] overflow-hidden relative w-full pb-[40px] sm:pb-[60px] md:pb-[20px] h-auto sm:h-auto md:h-[420px] lg:h-[560px] xl:h-[800px] bg-cornelia-softwhite grid sm:grid-cols-1 md:grid-cols-2 z-2">
+      <section className=" mt-[72px] lg:mt-[116px] xl:mt-[108px] overflow-hidden relative w-full pb-[40px] sm:pb-[60px] md:pb-[20px] h-auto sm:h-auto md:h-[420px] lg:h-[560px] xl:h-[800px] bg-cornelia-softwhite grid sm:grid-cols-1 md:grid-cols-2 z-2">
         <Blobs hideOnMd={true} />
 
         {/* Left: Hero Text */}
@@ -36,8 +36,8 @@ export default function Homepage() {
 
         {/* Right: Product Image */}
         <div className="relative items-center justify-center hidden p-8 md:flex">
-          <div className="absolute top-5 left-[20%] w-40 h-40 bg-cornelia-softpink rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
-          <div style={{ animationDelay: "4s" }} className="absolute top-18 right-[20%] w-40 h-40 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob" />
+          <div className="absolute top-5 left-[20%] w-40 h-40 sm:w-54 sm:h-54 md:w-60 md:h-60 lg:w-68 lg:h-68 xl:w-80 xl:h-80 bg-cornelia-softpink rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div style={{ animationDelay: "4s" }} className="absolute top-18 right-[20%] w-40 h-40 sm:w-54 sm:h-54 md:w-60 md:h-60 lg:w-68 lg:h-68 xl:w-80 xl:h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <Image src={product} alt="Displayed Product" className="z-0 w-auto h-auto xl:w-[700px] xl:h-[700px]" />
         </div>
       </section>

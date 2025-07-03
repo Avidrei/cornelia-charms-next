@@ -51,7 +51,7 @@ export default function Contact() {
     <div>
 
       {/* Contact Us Section */}
-      <section className="w-full bg-cornelia-softwhite">
+      <section className=" mt-[72px] lg:mt-[116px] xl:mt-[108px] w-full bg-cornelia-softwhite">
         <div className="flex flex-col items-center justify-center px-10 xl:px-[160px] 2xl:px-[300px] py-7 xl:py-10 2xl:py-12">
           <h2 className="text-[3.2rem] md:text-[3.75rem] xl:text-[5.25rem] 2xl:text-[5.75rem] tracking-wide font-bold bebas text-cornelia-darkpink drop-shadow-2xl">Contact Us</h2>
           <p className="text-center text-[0.9rem] xl:text-[1.1rem] 2xl:text-[1.4rem] poppins font-semibold">
@@ -127,8 +127,8 @@ export default function Contact() {
 
       {/* FAQ Section */}
       <section className="flex flex-col items-center justify-center w-full h-auto">
-        <div className="px-7 pt-[40px] xl:pt-[80px]">
-          <h2 className="text-center leading-9 justify-center text-[2.5rem] md:text-[3.5rem] xl:text-[4.5rem] bebas tracking-wide font-semibold text-cornelia-darkpink">
+        <div className="px-7 pt-[40px] xl:pt-[80px] pb-[15px] xl:pb-[30px]">
+          <h2 className="text-center leading-9 justify-center text-[2.5rem] md:text-[3.5rem] xl:text-[5.25rem] bebas tracking-wide font-semibold text-cornelia-darkpink">
             Frequently Asked <span className="text-cornelia-jetblack">Questions</span>
           </h2>
           <p className="mt-3 text-sm font-semibold text-center xl:mt-7 xl:text-xl poppins text-cornelia-jetblack">
