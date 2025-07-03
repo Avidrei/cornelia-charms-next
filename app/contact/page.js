@@ -63,16 +63,14 @@ export default function Contact() {
       </section>
 
       {/* Contact Form Section */}
-      <section
-        className="relative grid grid-cols-1 md:grid-cols-2 bg-center bg-no-repeat bg-cover h-[450px] xl:h-[600px]"
-      >
+      <section className="relative grid grid-cols-1 md:grid-cols-2 bg-center bg-no-repeat bg-cover h-[450px] xl:h-[600px]">
         <Image
-    src={bgImage}
-    alt="Background"
-    fill
-    className="z-0 object-cover"
-    priority
-  />  
+        src={bgImage}
+        alt="Background"
+        fill
+        className="z-0 object-cover"
+        priority
+        />  
         {/* Dark overlay */}
         <div className="absolute inset-0 z-0 bg-black bg-opacity-50" />
 
@@ -134,7 +132,7 @@ export default function Contact() {
             Frequently Asked <span className="text-cornelia-jetblack">Questions</span>
           </h2>
           <p className="mt-3 text-sm font-semibold text-center xl:mt-7 xl:text-xl poppins text-cornelia-jetblack">
-            Got a question? We've got answers!
+            Got a question? We&apos;ve got answers!
           </p>
         </div>
         <Accordion />
