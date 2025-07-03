@@ -13,7 +13,7 @@ export default function Homepage() {
   return (
     <div className="">
       {/* Hero Banner */}
-      <section className="overflow-hidden relative w-full pb-[40px] sm:pb-[60px] md:pb-[20px] h-auto sm:h-auto md:h-[420px] lg:h-[560px] xl:h-[800px] bg-cornelia-softwhite grid sm:grid-cols-1 md:grid-cols-2 z-2">
+      <section className="mt-[72px] xl:mt-[108px] overflow-hidden relative w-full pb-[40px] sm:pb-[60px] md:pb-[20px] h-auto sm:h-auto md:h-[420px] lg:h-[560px] xl:h-[800px] bg-cornelia-softwhite grid sm:grid-cols-1 md:grid-cols-2 z-2">
         <Blobs hideOnMd={true} />
 
         {/* Left: Hero Text */}
@@ -65,7 +65,7 @@ export default function Homepage() {
         </div>
       </section>
 
-{/* Our Products */}
+    {/* Our Products */}
     <section className="flex flex-col w-full overflow-hidden bg-orange-100 shadow-xl z-4">
 
       {/* Text Header */}
@@ -80,7 +80,7 @@ export default function Homepage() {
         <div className="flex flex-col items-center">
           <h2 className="text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem] bebas text-cornelia-jetblack">KEY CHAINS</h2>
           <div className="bg-gradient-to-b from-cornelia-softpink to-transparent p-7 lg:p-6 xl:p-8 h-[60%] rounded-[50px]">
-            <Image src={image2} alt="Key Chains" className="transition-transform duration-300 hover:scale-105 drop-shadow-2xl h-[250px] sm:w-[300px] sm:h-[300px] md:w-[240px] md:h-[240px] lg:w-[250px] lg:h-[250px] xl:w-[320px] xl:h-[320px]  2xl:w-[360px] 2xl:h-[360px] min-[2120px]:w-[440px] min-[2120px]:h-[440px] object-cover rounded-[30px]" />
+            <Image src={image2} alt="Key Chains" className="transition-transform duration-300 hover:scale-105 drop-shadow-2xl h-[250px] w-[250px] sm:w-[300px] sm:h-[300px] md:w-[240px] md:h-[240px] lg:w-[250px] lg:h-[250px] xl:w-[320px] xl:h-[320px]  2xl:w-[360px] 2xl:h-[360px] min-[2120px]:w-[440px] min-[2120px]:h-[440px] object-cover rounded-[30px]" />
           </div>
         </div>
 
@@ -88,7 +88,7 @@ export default function Homepage() {
         <div className="flex flex-col items-center">
           <h2 className="text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]  bebas text-cornelia-jetblack">CHARMS</h2>
           <div className="bg-gradient-to-b from-cornelia-softpink to-transparent p-7 lg:p-6 xl:p-8 h-[60%] rounded-[50px]">
-            <Image src={image2} alt="Charms" className="transition-transform duration-300 hover:scale-105 drop-shadow-2xl h-[250px] sm:w-[300px] sm:h-[300px] md:w-[240px] md:h-[240px]  lg:w-[250px] lg:h-[250px] xl:w-[320px] xl:h-[320px] 2xl:w-[360px] 2xl:h-[360px] min-[2120px]:w-[440px] min-[2120px]:h-[440px]  object-cover rounded-[30px]" />
+            <Image src={image2} alt="Charms" className="transition-transform duration-300 hover:scale-105 drop-shadow-2xl h-[250px] w-[250px] sm:w-[300px] sm:h-[300px] md:w-[240px] md:h-[240px]  lg:w-[250px] lg:h-[250px] xl:w-[320px] xl:h-[320px] 2xl:w-[360px] 2xl:h-[360px] min-[2120px]:w-[440px] min-[2120px]:h-[440px]  object-cover rounded-[30px]" />
           </div>
         </div>
 
@@ -96,7 +96,7 @@ export default function Homepage() {
         <div className="flex flex-col items-center md:col-span-2 lg:col-span-1">
           <h2 className="text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] xl:text-[2.2rem]  bebas text-cornelia-jetblack">BRACELETS</h2>
           <div className="bg-gradient-to-b from-cornelia-softpink to-transparent p-7 lg:p-6 xl:p-8 h-[60%] rounded-[50px]">
-            <Image src={image2} alt="Bracelets" className="transition-transform duration-300 hover:scale-105 drop-shadow-2xl h-[250px] sm:w-[300px] sm:h-[300px] md:w-[240px] md:h-[240px]  lg:w-[250px] lg:h-[250px] xl:w-[320px] xl:h-[320px]  2xl:w-[360px] 2xl:h-[360px] min-[2120px]:w-[440px] min-[2120px]:h-[440px] object-cover rounded-[30px]" />
+            <Image src={image2} alt="Bracelets" className="transition-transform duration-300 hover:scale-105 drop-shadow-2xl h-[250px] w-[250px] sm:w-[300px] sm:h-[300px] md:w-[240px] md:h-[240px]  lg:w-[250px] lg:h-[250px] xl:w-[320px] xl:h-[320px]  2xl:w-[360px] 2xl:h-[360px] min-[2120px]:w-[440px] min-[2120px]:h-[440px] object-cover rounded-[30px]" />
           </div>
         </div>
       
