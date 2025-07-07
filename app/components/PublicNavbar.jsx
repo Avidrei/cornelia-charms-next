@@ -43,7 +43,7 @@ export default function PublicNavbar() {
       </div>
 
       {/* Mobile Dropdown */}
-      <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out shadow-md bg-white px-6 md:px-20 ${isOpen ? "max-h-[500px] pb-4 pt-3 border-t-2 border-t-gray-200" : "max-h-0 py-0"}`}>
+      <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out shadow-md bg-white px-6 md:px-20 ${isOpen ? "max-h-[500px] pb-6 pt-3" : "max-h-0 py-0"}`}>
         <div className="flex flex-col items-start space-y-6 text-2xl tracking-wide uppercase bebas text-cornelia-darkpink">
           <Link href="/about" onClick={() => setIsOpen(false)} className={`flex items-center gap-3 transition-colors duration-200 hover:text-pink-800 ${pathname === "/about" ? "text-pink-800" : ""}`}><Info className="w-5 h-5" /> About Us</Link>
           <Link href="/products" onClick={() => setIsOpen(false)} className={`flex items-center gap-3 transition-colors duration-200 hover:text-pink-800 ${pathname === "/products" ? "text-pink-800" : ""}`}><ShoppingBag className="w-5 h-5" /> Products</Link>

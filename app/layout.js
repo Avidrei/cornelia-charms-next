@@ -3,7 +3,6 @@ import PublicNavbar from '@/components/PublicNavbar';
 import Footer from './components/Footer';
 import { Poppins, Bebas_Neue } from 'next/font/google';
 
-
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -29,7 +28,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${poppins.variable} ${bebas.variable}`}>
       <body>
         <PublicNavbar />
         <main>{children}</main>
