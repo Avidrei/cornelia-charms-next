@@ -8,9 +8,11 @@ import image2 from "./assets/image2.png";
 import Reviews from "./components/Reviews";
 import Blobs2 from "./components/Blobs2";
 import Blobs from "./components/Blobs";
+import ClientLayout from './client-layout';
 
 export default function Homepage() {
   return (
+    <ClientLayout>
     <div className="">
       {/* Hero Banner */}
       <section className=" mt-[72px] lg:mt-[116px] xl:mt-[108px] overflow-hidden relative w-full pb-[40px] sm:pb-[60px] md:pb-[20px] h-auto sm:h-auto md:h-[420px] lg:h-[540px] xl:h-[750px] bg-cornelia-softwhite grid sm:grid-cols-1 md:grid-cols-2 z-2">
@@ -133,6 +135,7 @@ export default function Homepage() {
     <Reviews />
     </section>
     </div>
+    </ClientLayout>
   );
 }
  

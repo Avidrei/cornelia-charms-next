@@ -4,6 +4,7 @@ import bgImage from '../assets/LOGIN-BG.jpg';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import ClientLayout from '../client-layout';
 
 export default function Login() {
   const router = useRouter();
@@ -19,7 +20,7 @@ export default function Login() {
     setError('');
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`, {
+     const res = await fetch('https://cornelia-charms-next.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -39,6 +40,7 @@ export default function Login() {
   };
 
   return (
+    <ClientLayout>
     <div className="mt-[72px] lg:mt-[116px] xl:mt-[128px] flex flex-col lg:grid lg:grid-cols-2 h-screen">
 
       {/* Background Image for Log In */}
@@ -118,5 +120,6 @@ export default function Login() {
         </div>
       </div>
     </div>
+    </ClientLayout>
   );
 }

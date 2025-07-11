@@ -5,6 +5,7 @@ import bgImage from '../assets/CONTACT-US-BG.png';
 import Accordion from '../components/Accordion';
 import { FaTiktok, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { SiShopee } from "react-icons/si";
+import ClientLayout from '../client-layout';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', message: '' });
@@ -48,6 +49,7 @@ export default function Contact() {
   };
 
   return (
+    <ClientLayout>
     <div>
 
       {/* Contact Us Section */}
@@ -145,5 +147,6 @@ export default function Contact() {
         </div>
       )}
     </div>
+    </ClientLayout>
   );
 }
