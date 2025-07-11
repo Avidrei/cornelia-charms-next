@@ -6,6 +6,8 @@ import cors from 'cors';
 import uploadRoute from './routes/uploadRoute.js';
 import reviewRoute from './routes/reviewRoute.js';
 import messageRoute from './routes/messageRoute.js'; 
+import authRoute from './routes/authenticationRoute.js';
+
 
 dotenv.config();
 
@@ -14,8 +16,9 @@ app.use(cors({
   origin: ['http://localhost:3000', 'https://corneliacharms.vercel.app'], // frontend dev + prod
   credentials: true
 }));
-
 app.use(express.json()); 
+
+app.use('/api/auth', authRoute);
 app.use('/api/upload', uploadRoute);
 app.use('/api/reviews', reviewRoute);
 app.use('/api/messages', messageRoute);

@@ -38,9 +38,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[0.6rem] md:gap-[0.8rem] pt-8 pl-3 text-sm text-left md:text-[1.1rem] md:pt-14">
+      <div className="flex flex-col gap-[0.6rem] md:gap-[1.1rem] pt-8 pl-3 text-sm text-left md:text-[1.1rem] md:pt-14">
         <Link href="/"><h2 className={`${pathname === "/" ? "font-semibold" : "font-normal"}`}>Home</h2></Link>
-        <Link href="/about"><h2 className={`${pathname === "/about" ? "font-bold" : "font-normal"}`}>About Us</h2></Link>
         <Link href="/products"><h2 className={`${pathname === "/products" ? "font-bold" : "font-normal"}`}>Products</h2></Link>
         <Link href="/contact"><h2 className={`${pathname === "/contact" ? "font-bold" : "font-normal"}`}>Contact Us</h2></Link>
         <Link href="/login"><h2 className={`${pathname === "/login" ? "font-bold" : "font-normal"}`}>Log In</h2></Link>

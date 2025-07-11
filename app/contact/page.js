@@ -10,7 +10,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: '', message: '' });
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState('');
-  const [popupColor, setPopupColor] = useState(''); // e.g., text-green-500 or text-red-500
+  const [popupColor, setPopupColor] = useState(''); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
