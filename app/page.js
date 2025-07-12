@@ -40,7 +40,7 @@ export default function Homepage() {
         <div className="relative items-center justify-center hidden p-8 md:flex">
           <div className="absolute top-5 left-[20%] w-40 h-40 sm:w-54 sm:h-54 md:w-60 md:h-60 lg:w-68 lg:h-68 xl:w-80 xl:h-80 bg-cornelia-softpink rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
           <div style={{ animationDelay: "4s" }} className="absolute top-18 right-[20%] w-40 h-40 sm:w-54 sm:h-54 md:w-60 md:h-60 lg:w-68 lg:h-68 xl:w-80 xl:h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <Image src={product} alt="Displayed Product" className="z-0 w-auto h-auto xl:w-[700px] xl:h-[700px]" />
+          <Image src={product} alt="Displayed Product" className="z-0 w-auto h-auto md:w-[400px] md:h-[350px] lg:w-[500px] lg:h-[500px] xl:w-[700px] xl:h-[700px]" />
         </div>
       </section>
 

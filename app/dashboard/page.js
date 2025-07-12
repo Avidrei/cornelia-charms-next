@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { jwtDecode } from 'jwt-decode';
 
 export default function Dashboard() {
   const router = useRouter();
@@ -11,10 +12,17 @@ export default function Dashboard() {
     if (!token) {
       router.push('/login');
     } else {
-      // Later: verify token or fetch user info
-      setUser({ email: 'admin@cornelia.com' }); // dummy email for now
+      try {
+        const decoded = jwtDecode(token);
+        console.log('🔍 Decoded JWT:', decoded); // ✅ add this line
+        setUser({ email: decoded.email });
+      } catch (error) {
+        console.error('Invalid token:', error);
+        router.push('/login');
+      }
     }
   }, []);
+
 
   if (!user) return <p>Loading...</p>;
 

@@ -54,7 +54,7 @@ const Accordion = () => {
   ];
 
   return (
-    <div className="w-full px-4 py-5 mb-10 space-y-4 bg-white rounded-xl">
+    <div className="z-10 w-full px-4 py-5 mb-10 space-y-4 rounded-xl">
       {items.map((item, index) => (
         <AccordionItem
           key={index}

@@ -128,7 +128,12 @@ export default function Contact() {
       </section>
 
       {/* FAQ Section */}
-      <section className="flex flex-col items-center justify-center w-full h-auto">
+      <section className="relative flex flex-col items-center justify-center w-full h-auto overflow-hidden">
+
+        {/* Decorative Blobs */}
+        <div className="absolute z-0 -top-[10%] -left-[10%] rounded-full w-[250px] h-[250px]  sm:w-[300px] sm:h-[300px] md:h-[350px] md:w-[350px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px]  bg-gradient-to-b from-cornelia-softpink to-cornelia-softwhitemix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute z-0 -bottom-[10%] -right-[10%] rounded-full  w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:h-[350px] md:w-[350px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px]  bg-gradient-to-b from-orange-200 to-cornelia-softwhitemix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+
         <div className="px-7 pt-[40px] xl:pt-[80px] pb-[15px] xl:pb-[30px]">
           <h2 className="text-center leading-9 justify-center text-[2.5rem] md:text-[3.5rem] xl:text-[5.25rem] bebas tracking-wide font-semibold text-cornelia-darkpink">
             Frequently Asked <span className="text-cornelia-jetblack">Questions</span>
