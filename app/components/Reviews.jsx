@@ -9,7 +9,7 @@ export default function Reviews() {
   const intervalSeconds = 5000;
 
   useEffect(() => {
-    axios.get('https://cornelia-charms-next.onrender.com/api/reviews') 
+    axios.get('https://cornelia-charms-next-production.up.railway.app/api/reviews') 
       .then(res => setReviews(res.data))
       .catch(err => console.error("Error fetching reviews:", err));
   }, []);

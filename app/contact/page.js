@@ -22,7 +22,7 @@ export default function Contact() {
     e.preventDefault();
 
     try {
-      const res = await fetch('https://cornelia-charms-next.onrender.com/api/messages', {
+      const res = await fetch('https://cornelia-charms-next-production.up.railway.app/api/messages', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

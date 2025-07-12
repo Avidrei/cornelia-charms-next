@@ -13,7 +13,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://corneliacharms.vercel.app'], // frontend dev + prod
+  origin: ['http://localhost:3000', 'https://corneliacharms.vercel.app'],
   credentials: true
 }));
 app.use(express.json()); 
