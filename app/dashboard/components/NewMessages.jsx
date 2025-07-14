@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 
 export default function NewMessages() {
-  const [latestMessage, setLatestMessage] = useState(null);
+  const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -13,8 +13,10 @@ export default function NewMessages() {
         const data = await res.json();
 
         if (Array.isArray(data) && data.length > 0) {
-          const sorted = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-          setLatestMessage(sorted[0]);
+          const sorted = data
+            .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+            .slice(0, 3); // get latest 3
+          setMessages(sorted);
         }
       } catch (error) {
         console.error('Error fetching messages:', error);
@@ -29,23 +31,30 @@ export default function NewMessages() {
   return (
     <div>
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-bold text-cornelia-jetblack poppins">New Message</h2>
+        <h2 className="text-lg font-bold text-cornelia-jetblack poppins">New Messages</h2>
         <button className="text-sm font-semibold text-cornelia-darkpink">View More</button>
       </div>
 
-      <div className="p-4 mt-2 space-y-2 text-white bg-gradient-to-r from-cornelia-darkpink to-cornelia-softpink rounded-xl">
+      <div className="mt-2 space-y-3">
         {loading ? (
           <p className="text-sm">Loading...</p>
-        ) : latestMessage ? (
-          <>
-            <div className="font-bold">{latestMessage.name}</div>
-            <p className="text-sm leading-tight">{latestMessage.message}</p>
-            <div className="text-xs text-white/70">
-              {new Date(latestMessage.createdAt).toLocaleString()}
+        ) : messages.length > 0 ? (
+          messages.map((msg, i) => (
+            <div
+              key={i}
+              className="flex flex-col gap-2 p-4 space-y-1 bg-gradient-to-r poppins from-cornelia-darkpink to-cornelia-softpink rounded-xl"
+            >
+              <div className="px-4 py-2 font-semibold bg-white rounded-lg text-cornelia-jetblack">Name: {msg.name}</div>
+              <p className="px-4 py-5 text-sm font-medium leading-tight bg-white rounded-lg ">{msg.message}</p>
+              <div className="text-xs font-semibold text-right text-white">
+                {new Date(msg.createdAt).toLocaleString()}
+              </div>
             </div>
-          </>
+          ))
         ) : (
-          <p className="text-sm leading-tight">No new messages yet.</p>
+          <div className='h-[5.rem] p-4 bg-cornelia-softpink rounded-xl'>
+            <div className="px-4 py-3 text-md poppins rounded-xl bg-cornelia-softwhite">No New Messages Yet.</div>
+          </div>
         )}
       </div>
     </div>
