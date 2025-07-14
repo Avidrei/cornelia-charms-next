@@ -3,14 +3,14 @@
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { LayoutDashboard, Package, Lock, Ticket, LogOut } from 'lucide-react';
+import { LayoutDashboard, Package, ChartBar, MonitorStop, LogOut } from 'lucide-react';
 import logo from "../assets/CC-ICON-WHITE.png";
 
 const menuItems = [
-  { label: 'Dashboard', href: '/dashboard', icon: <LayoutDashboard size={25} /> },
-  { label: 'Products', href: '/dashboard/products', icon: <Package size={25} /> },
-  { label: 'Access', href: '/login', icon: <Lock size={25} /> },
-  { label: 'Tickets', href: '/banners', icon: <Ticket size={25} /> },
+  { label: 'Dashboard', href: 'dashboard', icon: <LayoutDashboard size={25} /> },
+  { label: 'Chart', href: 'dashboard/graphs', icon: <ChartBar size={25} /> },
+  { label: 'Products', href: 'dashboard/products', icon: <Package size={25} /> },
+  { label: 'Banners', href: 'dashboard/banners', icon: <MonitorStop size={25} /> },
 ];
 
 export default function PrivateNavbar() {
