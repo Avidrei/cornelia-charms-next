@@ -13,7 +13,6 @@ export default function NewMessages() {
         const data = await res.json();
 
         if (Array.isArray(data) && data.length > 0) {
-          // Sort messages by date and get the latest one
           const sorted = data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
           setLatestMessage(sorted[0]);
         }
@@ -39,8 +38,11 @@ export default function NewMessages() {
           <p className="text-sm">Loading...</p>
         ) : latestMessage ? (
           <>
-            <div className="font-bold">{latestMessage.sender}</div>
+            <div className="font-bold">{latestMessage.name}</div>
             <p className="text-sm leading-tight">{latestMessage.message}</p>
+            <div className="text-xs text-white/70">
+              {new Date(latestMessage.createdAt).toLocaleString()}
+            </div>
           </>
         ) : (
           <p className="text-sm leading-tight">No new messages yet.</p>
