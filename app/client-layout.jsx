@@ -14,14 +14,14 @@ export default function ClientLayout({ children }) {
     return (
       <div className="flex flex-col min-h-screen lg:flex-row">
         <PrivateNavbar />
-        <main className="flex-1 px-4 py-6 bg-gray-50">
+        <main className="transition-all duration-300 sm:pt-[5rem] lg:pt-5 lg:ml-[6rem]">
           {children}
         </main>
       </div>
     );
   }
 
-  // Public layout (with top navbar and footer)
+  // Public layout
   return (
     <>
       <PublicNavbar />
