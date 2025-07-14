@@ -25,7 +25,7 @@ export default function ClientLayout({ children }) {
   return (
     <>
       <PublicNavbar />
-      <main className="min-h-[calc(100vh-64px)] px-4 py-6">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );
